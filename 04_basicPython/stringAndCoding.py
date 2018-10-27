@@ -39,4 +39,6 @@ print(len('中'))
 print(len('中文'.encode('utf-8')))
 print(len('ABC'.encode('ascii')), len('ABC'.encode('utf-8')))
 
-#
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
