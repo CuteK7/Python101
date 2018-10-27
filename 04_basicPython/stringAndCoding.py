@@ -42,3 +42,21 @@ print(len('ABC'.encode('ascii')), len('ABC'.encode('utf-8')))
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# 格式化
+# %s替换字符串，%d替换整数，%f替换浮点数，%x替换十六进制数
+# %s是万能替换符，%%表示转义%
+print('Hi %s, your score is %d.' % ('Bart', 59))
+
+# format()格式化，可以格式化{0},{1}替换
+print('Hi {0}, your score is {1:.2f}.'.format('Bart', 59))
+
+# 练习
+# 小明的成绩从去年的72分提升到了今年的85分，请计算小明成绩提升的百分点，并用字符串格式化显示出'xx.x%'，只保留小数点后1位：
+# -*- coding: utf-8 -*-
+
+s1 = 72
+s2 = 85
+
+r = (s2 - s1) / s1 * 100
+print('%.1f%%' % r)
+
