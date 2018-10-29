@@ -34,3 +34,62 @@ print('Although L contains a list as item[1], L\'s length is %d\n' % len(L))
 # Void List
 voidList = []
 print('The length of voidList is %d.\n' % len(voidList))
+
+
+# Tuples are similar to lists. But the elements in tuples can not be changeable.
+# Once a tuple is assigned, methods used in list such as append, insert can not be applied to tuples.
+# Tuple elements can be called by the same way as you do to a list item.
+classmatesTuple = ('Bart', 'Lisa', 'Maggie')
+print('The first element in classmatesTuple is %s.' % classmatesTuple[0])
+print('The last element in classmatesTuple is %s.\n' % classmatesTuple[-1])
+
+# Because of the property of unchangeable, tuples are considered safer than lists.
+# So they are widely used for safety reasons.
+# Be aware that tuples containing singular element are defined in this way:
+# IMPORTANT: YOU MUST USE A COMMA AFTER THE 'ONLY ELEMENT' SO THAT PYTHON CAN RECOGNIZE THE VALUE AS A TUPLE. OTHERWISE IT WILL BE RECOGNIZED AS AN ARITHMETIC EXPRESSION.
+singularTuple = (1,)
+fakeSingularTuple = (1)
+print('The type of singularTuple is %s.\nBut the type of fakeSingularTuple is %s.\n' % (type(singularTuple), type(fakeSingularTuple)))
+
+
+# 'Changeable' Tuple:
+changeableTuple = ('a', 'b', ['A', 'B'])
+changeableTuple[2][0] = 'X'
+changeableTuple[2][1] = 'Y'
+
+print('The changeable Tuple becomes {0}.\n'.format(changeableTuple))
+
+# 练习
+# 请用索引取出下面list的指定元素：
+#
+# # -*- coding: utf-8 -*-
+#
+# L = [
+#     ['Apple', 'Google', 'Microsoft'],
+#     ['Java', 'Python', 'Ruby', 'PHP'],
+#     ['Adam', 'Bart', 'Lisa']
+# ]
+
+# # 打印Apple:
+# print(?)
+# # 打印Python:
+# print(?)
+# # 打印Lisa:
+# print(?)
+
+
+
+# -*- coding: utf-8 -*-
+
+L = [
+    ['Apple', 'Google', 'Microsoft'],
+    ['Java', 'Python', 'Ruby', 'PHP'],
+    ['Adam', 'Bart', 'Lisa']
+]
+
+# 打印Apple:
+print(L[0][0])
+# 打印Python:
+print(L[1][1])
+# 打印Lisa:
+print(L[2][2])
